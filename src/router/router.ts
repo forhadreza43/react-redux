@@ -1,7 +1,8 @@
 import { createBrowserRouter } from 'react-router';
 import App from '../App';
-import { createElement } from 'react';
+// import { createElement } from 'react';
 import Root from '../layout/Root';
+import Counter from '@/components/counter/Counter';
 
 const router = createBrowserRouter([
    {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
          },
          {
             path: 'counter',
-            element: createElement('div', null, 'Counter Page'),
+            Component: Counter,
          },
       ],
    },
